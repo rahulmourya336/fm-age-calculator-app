@@ -10,12 +10,12 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("assets/fonts/Poppins-Bold.ttf") format("truetype"),
-    url("assets/fonts/Poppins-BoldItalic.ttf") format("truetype"),
-    url("assets/fonts/Poppins-ExtraBold.ttf") format("truetype"),
-    url("assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype"),
-    url("assets/fonts/Poppins-Italic.ttf") format("truetype"),
-    url("assets/fonts/Poppins-Regular.ttf") format("truetype");
+  src: url("./fonts/Poppins-Bold.ttf") format("truetype"),
+    url("./fonts/Poppins-BoldItalic.ttf") format("truetype"),
+    url("./fonts/Poppins-ExtraBold.ttf") format("truetype"),
+    url("./fonts/Poppins-ExtraBoldItalic.ttf") format("truetype"),
+    url("./fonts/Poppins-Italic.ttf") format("truetype"),
+    url("./fonts/Poppins-Regular.ttf") format("truetype");
 }
 
 body {
