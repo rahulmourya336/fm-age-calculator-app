@@ -34,8 +34,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .wrapper {
   background-color: var(--color-White);
-  width: 70vw;
-  margin: 8vh auto 40px auto;
+  width: 60vw;
+  margin: 10vh auto 40px auto;
   border-collapse: collapse;
   padding: 56px;
   border-radius: 18px 18px 30% 18px;
