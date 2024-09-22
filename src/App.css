@@ -35,7 +35,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .wrapper {
   background-color: var(--color-White);
   width: 60vw;
-  margin: 10vh auto 40px auto;
+  margin: 14vh auto 40px auto;
   border-collapse: collapse;
   padding: 56px;
   border-radius: 18px 18px 30% 18px;
@@ -93,8 +93,8 @@ label {
   right: -2px;
   top: -40px;
   background-color: var(--color-Purple);
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   padding: 10px;
 }
