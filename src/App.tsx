@@ -104,11 +104,7 @@ function App() {
   return (
     <>
       <main className="wrapper">
-        <form
-          onSubmit={handleSubmit(handleAge)}
-          name="search-form"
-          id="search-form"
-        >
+        <form onSubmit={handleSubmit(handleAge)}>
           <div className="container">
             <div className="input">
               <div className="form-group">
@@ -208,11 +204,8 @@ function App() {
               </div>
             </div>
           </div>
-          <div
-            className="divider"
-            onClick={document?.forms?['search-form']?.submit()}
-          >
-            <button type="button">
+          <div className="divider">
+            <button type="submit">
               <img
                 src="assets/images/icon-arrow.svg"
                 alt="divider"
