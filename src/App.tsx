@@ -104,7 +104,11 @@ function App() {
   return (
     <>
       <main className="wrapper">
-        <form onSubmit={handleSubmit(handleAge)}>
+        <form
+          onSubmit={handleSubmit(handleAge)}
+          name="search-form"
+          id="search-form"
+        >
           <div className="container">
             <div className="input">
               <div className="form-group">
@@ -139,7 +143,7 @@ function App() {
               </div>
               <div className="form-group">
                 <label
-                  htmlFor="day"
+                  htmlFor="month"
                   className={errors?.month ? "error-text" : ""}
                 >
                   Month
@@ -157,8 +161,8 @@ function App() {
                       value: 2,
                       message: "Must be 2 characters long",
                     },
-                    min: 1,
-                    max: 12,
+                    min: { value: 1, message: "Must be a valid month" },
+                    max: { value: 12, message: "Must be a valid month" },
                     onChange: (e) => handleOnChange(e),
                   })}
                 />
@@ -170,7 +174,7 @@ function App() {
               </div>
               <div className="form-group">
                 <label
-                  htmlFor="day"
+                  htmlFor="year"
                   className={errors?.year ? "error-text" : ""}
                 >
                   Year
@@ -204,8 +208,11 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="divider">
-            <button type="submit">
+          <div
+            className="divider"
+            onClick={document?.forms?['search-form']?.submit()}
+          >
+            <button type="button">
               <img
                 src="assets/images/icon-arrow.svg"
                 alt="divider"
